@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import NavigationModal from './NavigationModal';
 import {connect} from 'react-redux';
 import {updateModal} from '../reducers/websiteReducer'
@@ -13,13 +13,13 @@ let NavigationPane = (props) => {
       <div className = 'site-header'>
           <div className = 'header-content'>
             <div className = 'resume-section navlink'> 
-            <a className = 'download-link' href = {resume} download="JonWoodring_Resume.pdf"> <img className = 'download-icon' src = {download} width = 'auto' height = '20'/> Download Resume</a>
+            <a className = 'download-link' href = {resume} download="JonWoodring_Resume.pdf"> <img alt="" className = 'download-icon' src = {download} width = 'auto' height = '20'/> Download Resume</a>
           </div>
       </div>
     </div>
     <div className="navigation-header">
       <a href = '/home' className = 'logo-image-link'>
-          <img className = 'logo-image' src = {logo} height = '400' width = '600'/>
+          <img alt="" className = 'logo-image' src = {logo} height = '400' width = '600'/>
       </a>
     <button className ="navbutton" id = "navButton" onClick={() => {
               props.updateModal(props.showModal)    

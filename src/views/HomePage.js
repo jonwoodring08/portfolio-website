@@ -1,6 +1,5 @@
 import React from 'react';
 import cliffView from '../assets/images/cliff-view.jpg';
-import Services from '../views/Services'; 
 import lifecycle from '../assets/images/lifecycle.svg'; 
 import pentip from '../assets/images/pen-tip.svg';
 let HomePage = () => {
@@ -15,7 +14,7 @@ let HomePage = () => {
                         { <div className = 'services-button-container'><button className = 'services-button' > View Services </button></div> }
                     </span>
                     <figure className = 'portrait-frame'>
-                        <img className = 'portrait-image' srcset = { cliffView }/>
+                        <img alt="" className = 'portrait-image' srcset = { cliffView }/>
                     </figure>
             </div>
             <div className = 'homepage-section grey'>
@@ -23,7 +22,7 @@ let HomePage = () => {
                 <h1 className = 'section-break section-title'> My skills </h1>
                     <div className = 'skill-container'>
                         <div className = 'skill-box'>
-                            <img class = 'skill-image' src = { lifecycle } width = '100'></img>
+                            <img alt="" class = 'skill-image' src = { lifecycle } width = '100'></img>
                             <h1 class = 'skill-title'> Web Development </h1>
                             <h2 class = 'skill-sub-title'> Lifecycle Driven</h2>
                             <div class = 'skill-text-area'>
@@ -31,7 +30,7 @@ let HomePage = () => {
                             </div>
                         </div>
                         <div className = 'skill-box'>
-                            <img class = 'skill-image' src = { pentip } width = '100'></img>
+                            <img alt="" class = 'skill-image' src = { pentip } width = '100'></img>
                             <h1 class = 'skill-title'> Web Design </h1>
                             <h2 class = 'skill-sub-title'> Fast and Responsive </h2>
                             <div class = 'skill-text-area'>
